@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- When uploading: rename this file to index.html so links from privacy.html / support.html work. -->
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -552,12 +553,12 @@
 
 <!-- ── TOP NAV ── -->
 <nav>
-  <a class="nav-brand" href="#" onclick="showPage('home')">Just Apps</a>
+  <a class="nav-brand" href="index.html">Just Apps</a>
   <ul class="nav-links">
-    <li><a href="#" onclick="showPage('home')">Apps</a></li>
-    <li><a href="#" onclick="showPage('home'); setTimeout(()=>document.getElementById('philosophy-anchor').scrollIntoView({behavior:'smooth'}),100)">About</a></li>
-    <li><a href="#" onclick="showPage('privacy')">Privacy</a></li>
-    <li><a href="#" onclick="showPage('support')">Support</a></li>
+    <li><a href="index.html">Apps</a></li>
+    <li><a href="index.html#philosophy-anchor">About</a></li>
+    <li><a href="privacy.html">Privacy</a></li>
+    <li><a href="support.html">Support</a></li>
   </ul>
 </nav>
 
@@ -573,7 +574,7 @@
     <p>Just Apps uses AI to build quality iOS apps for a fraction of the usual cost — and charges you accordingly. Pay only for the features you actually want. Never for the ones you don't.</p>
     <div class="hero-cta">
       <a href="#apps" class="btn-primary" onclick="document.getElementById('apps').scrollIntoView({behavior:'smooth'})">See the apps</a>
-      <a href="#" class="btn-ghost" onclick="showPage('support')">Get in touch</a>
+      <a href="support.html" class="btn-ghost">Get in touch</a>
     </div>
   </section>
 
@@ -724,111 +725,36 @@
 <!-- end page-home -->
 
 
-<!-- ══════════════════════════════════════
-     PAGE: PRIVACY POLICY
-══════════════════════════════════════ -->
-<div id="page-privacy" class="page">
-  <div style="height:64px"></div>
-  <section class="privacy-section">
-    <p class="section-label">Legal</p>
-    <h2>Privacy Policy</h2>
-    <p class="last-updated">Last updated: March 2026</p>
-
-    <div class="privacy-badge">
-      ✦ &nbsp;Just Apps collects zero personal data. Everything stays on your device.
-    </div>
-
-    <h3>Overview</h3>
-    <p>Just Apps Ltd ("we", "us", "our") builds simple iOS apps under the "Just" brand. This privacy policy applies to all Just Apps applications including Just Habits, Just Nudge, and all future apps in the Just range.</p>
-
-    <h3>Data we collect</h3>
-    <p>We collect no personal data whatsoever. Specifically:</p>
-    <ul>
-      <li>We do not require you to create an account</li>
-      <li>We do not collect your name, email address, or any identifying information</li>
-      <li>We do not use analytics or tracking tools</li>
-      <li>We do not use advertising or advertising identifiers</li>
-      <li>We do not share any data with third parties</li>
-    </ul>
-
-    <h3>Data stored on your device</h3>
-    <p>All app data — including your habits, completions, streaks, and settings — is stored locally on your device using Apple's CoreData framework. This data never leaves your device and is not accessible to us.</p>
-
-    <h3>Apple App Store & payments</h3>
-    <p>Subscriptions and purchases are processed entirely by Apple through the App Store. We do not receive or store your payment information. Apple's privacy policy governs all payment processing.</p>
-
-    <h3>Push notifications</h3>
-    <p>If you enable reminders, notifications are scheduled locally on your device. No notification data is sent to our servers (we have none).</p>
-
-    <h3>Children</h3>
-    <p>Our apps do not knowingly collect data from anyone, including children under 13.</p>
-
-    <h3>Changes to this policy</h3>
-    <p>If we ever change this policy, we will update the date above and note the change in the app's release notes.</p>
-
-    <h3>Contact</h3>
-    <p>Questions about privacy? Email us at <a href="/cdn-cgi/l/email-protection#5121233827303228113b242225302121227f302121" style="color:var(--green-deep)"><span class="__cf_email__" data-cfemail="ed9d9f849b8c8e94ad87989e998c9d9d9ec38c9d9d">[email&#160;protected]</span></a></p>
-  </section>
-</div>
-
-
-<!-- ══════════════════════════════════════
-     PAGE: SUPPORT
-══════════════════════════════════════ -->
-<div id="page-support" class="page">
-  <div style="height:64px"></div>
-  <section class="support-section">
-    <p class="section-label">Support</p>
-    <h2>We're here to help.</h2>
-    <p>Every Just App is built by a small team. If something isn't working or you have a question, we read every email and aim to reply within one working day.</p>
-
-    <div class="support-cards">
-      <div class="support-card">
-        <h3>📱 Just Habits</h3>
-        <p>Questions about habit tracking, streaks, reminders, widgets, or subscriptions.</p>
-      </div>
-      <div class="support-card">
-        <h3>🔔 Just Nudge</h3>
-        <p>Questions about screen time nudges, notification settings, or app tracking.</p>
-      </div>
-      <div class="support-card">
-        <h3>💳 Billing & Subscriptions</h3>
-        <p>All billing is handled by Apple. To cancel, go to Settings → Apple ID → Subscriptions.</p>
-      </div>
-      <div class="support-card">
-        <h3>💡 Feature Requests</h3>
-        <p>We genuinely read these. If enough people ask for something, we'll build it.</p>
-      </div>
-    </div>
-
-    <div class="support-email-box">
-      <p>Send us an email at any time</p>
-      <a href="/cdn-cgi/l/email-protection#43303633332c31370329363037223333306d223333"><span class="__cf_email__" data-cfemail="c2b1b7b2b2adb0b682a8b7b1b6a3b2b2b1eca3b2b2">[email&#160;protected]</span></a>
-    </div>
-  </section>
-</div>
-
-
 <!-- ── FOOTER (shown on all pages) ── -->
 <footer>
   <div class="footer-brand">Just Apps</div>
   <nav>
-    <a href="#" onclick="showPage('home')">Apps</a>
-    <a href="#" onclick="showPage('privacy')">Privacy Policy</a>
-    <a href="#" onclick="showPage('support')">Support</a>
-    <a href="/cdn-cgi/l/email-protection#462e232a2a29062c3335322736363568273636"><span class="__cf_email__" data-cfemail="e189848d8d8ea18b94929580919192cf809191">[email&#160;protected]</span></a>
+    <a href="index.html">Apps</a>
+    <a href="privacy.html">Privacy Policy</a>
+    <a href="support.html">Support</a>
+    <a href="mailto:willgalloway@justapps.app">willgalloway@justapps.app</a>
   </nav>
   <p>© 2026 Just Apps. Made in the UK. &nbsp;·&nbsp; <a href="https://justapps.app" style="color:inherit">justapps.app</a> &nbsp;·&nbsp; 25% of profit donated to charity.</p>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
   function showPage(name) {
     document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
     document.getElementById('page-' + name).classList.add('active');
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // Handle hash routing
   function routeFromHash() {
-    const hash = window.location.hash.replace('#','') || 'home';
-    const valid = ['home','privacy','s
+    const hash = window.location.hash.replace('#', '') || 'home';
+    if (hash === 'privacy') { window.location.href = 'privacy.html'; return; }
+    if (hash === 'support') { window.location.href = 'support.html'; return; }
+    showPage('home');
+    if (hash === 'philosophy-anchor') {
+      setTimeout(() => document.getElementById('philosophy-anchor')?.scrollIntoView({ behavior: 'smooth' }), 100);
+    }
+  }
+  window.addEventListener('hashchange', routeFromHash);
+  routeFromHash();
+</script>
+</body>
+</html>
